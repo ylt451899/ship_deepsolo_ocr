@@ -1,0 +1,6 @@
+# 專案特定忽略檔案
+best.pt
+ship_ocr.py
+aa.py
+model_v2_rects.pth
+res50_pretrain_synch-art-lsvt-rects.pth
