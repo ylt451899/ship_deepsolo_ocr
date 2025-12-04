@@ -120,9 +120,7 @@ python ship_ocr_detection.py
 - `*_vis.jpg`: 一張視覺化圖片，其中辨識出的文字會被綠色框標記出來。
 
 ## 致謝
-
 - 本專案的 OCR 功能基於 [DeepSolo](https://github.com/ViTAE-Transformer/DeepSolo)。
 - 船隻偵測功能使用了 [YOLO (You Only Look Once)](https://github.com/ultralytics/ultralytics) 模型。
 
-感謝這些優秀的開源專案。
->>>>>>> Stashed changes
+
