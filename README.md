@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 本專案需要兩個預訓練模型，請手動下載並放置到正確的位置。
 
-*   **YOLOv8n (船隻偵測模型)**
+*   **YOLOv11n (船隻偵測模型)**
     *   執行 `ship_detection.py` 會自動下載檔案 `yolov11n.pt`
     *   **下載檔案**: `yolov11n.pt`
     *   **放置路徑**: 請在專案根目錄下建立 `weights` 資料夾，並將模型放入。最終路徑為 `./weights/yolov11n.pt`。
