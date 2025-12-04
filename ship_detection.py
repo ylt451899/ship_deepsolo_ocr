@@ -11,7 +11,7 @@ class ShipDetectorAdvanced:
         3. ROI 裁切：將偵測到的船隻區域裁切下來供後續 OCR 使用。
         4. 重疊框抑制 (NMS) 與 連續截圖去重複。
     """
-    def __init__(self, input_dir, output_dir, model_path='../weights/yolo11n.pt'):
+    def __init__(self, input_dir, output_dir, model_path='./weights/yolo11n.pt'):
         self.input_dir = input_dir
         self.output_dir = output_dir
         
