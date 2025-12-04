@@ -14,7 +14,7 @@
 本專案的處理流程如下，使用者僅需依序執行三個 Python 腳本即可完成所有操作。
 
 ```
-[原始圖片] -> [Step 1: data_cleaning.py] -> [純淨圖片] -> [Step 2: ship_detection.py] -> [船隻裁切圖] -> [Step 3: ship_ocr_detection.py] -> [辨識結果 (文字檔 + 視覺化圖片)]
+[原始圖片] -> [Step 1: data_cleaning.py] -> [純淨圖片] -> [Step 2: ship_detection.py] -> [船隻裁切圖] -> [Step 3: ship_ocr_detection.py] -> [辨識結果 (文字檔)]
 ```
 
 ## 安裝與設定
