@@ -15,6 +15,8 @@
 ├── demo/                 # DeepSolo 官方提供的範例腳本
 ├── data/                 # 存放原始圖片
 │   └── output/           # 存放最終辨識結果
+├── pretrained_backbone/  # 存放骨幹網路預訓練模型權重
+│   └── ...               # 包含 Swin/ViT 等轉換腳本或權重檔案
 ├── step1_cleaned/        # 存放第一步清洗後的圖片
 ├── step2_ship_crops/     # 存放第二步裁切出的船隻圖片
 ├── weights/              # 存放 YOLO 模型
