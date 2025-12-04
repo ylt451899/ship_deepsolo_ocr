@@ -51,7 +51,6 @@
 
 ```bash
 git clone <your-repository-url>
-cd deepsolo-main
 ```
 
 **2. 安裝相依套件**
