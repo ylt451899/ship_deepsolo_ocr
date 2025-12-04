@@ -1,6 +1,30 @@
-# Ship-OCR: 智慧型船隻影像辨識系統
+# DeepSolo 船名船號OCR辨識
 
 本專案是一個完整的三階段船隻影像辨識流程，旨在從原始影像中自動偵測船隻、裁切目標，並對船隻上的船名、船號等文字進行光學字元辨識 (OCR)。
+
+## 專案結構
+
+```
+.
+├── AdelaiDet.egg-info/   # AdelaiDet 專案的 Python egg-info 元資料 (安裝時生成)
+├── adet/                 # DeepSolo 框架核心程式碼
+├── build/                # Python 專案構建相關檔案 (如編譯的 C/C++ 擴展模組)
+├── configs/              # DeepSolo 模型設定檔
+├── char_map/             # DeepSolo 所使用的字元集與索引對應檔
+├── tools/                # DeepSolo 官方提供的訓練/評估工具
+├── demo/                 # DeepSolo 官方提供的範例腳本
+├── data/                 # 存放原始圖片
+│   └── output/           # 存放最終辨識結果
+├── step1_cleaned/        # 存放第一步清洗後的圖片
+├── step2_ship_crops/     # 存放第二步裁切出的船隻圖片
+├── weights/              # 存放 YOLO 模型
+├── data_cleaning.py      # 第一步：資料清洗腳本
+├── ship_detection.py     # 第二步：船隻偵測腳本
+├── ship_ocr_detection.py # 第三步：OCR 辨識腳本
+├── requirements.txt      # Python 相依套件列表
+├── environment.yml       # Conda 環境套件列表
+└── README.md             # 本說明文件
+```
 
 ## 功能特色
 
@@ -94,30 +118,6 @@ python ship_ocr_detection.py
 辨識完成後，結果會儲存在 `data/output` 資料夾中，每張輸入的船隻圖都會對應產生兩個檔案：
 - `*_result.txt`: 包含辨識出的文字與其信心分數。
 - `*_vis.jpg`: 一張視覺化圖片，其中辨識出的文字會被綠色框標記出來。
-
-## 專案結構
-
-```
-.
-├── AdelaiDet.egg-info/   # AdelaiDet 專案的 Python egg-info 元資料 (安裝時生成)
-├── adet/                 # DeepSolo 框架核心程式碼
-├── build/                # Python 專案構建相關檔案 (如編譯的 C/C++ 擴展模組)
-├── configs/              # DeepSolo 模型設定檔
-├── char_map/             # DeepSolo 所使用的字元集與索引對應檔
-├── tools/                # DeepSolo 官方提供的訓練/評估工具
-├── demo/                 # DeepSolo 官方提供的範例腳本
-├── data/                 # 存放原始圖片
-│   └── output/           # 存放最終辨識結果
-├── step1_cleaned/        # 存放第一步清洗後的圖片
-├── step2_ship_crops/     # 存放第二步裁切出的船隻圖片
-├── weights/              # 存放 YOLO 模型
-├── data_cleaning.py      # 第一步：資料清洗腳本
-├── ship_detection.py     # 第二步：船隻偵測腳本
-├── ship_ocr_detection.py # 第三步：OCR 辨識腳本
-├── requirements.txt      # Python 相依套件列表
-├── environment.yml       # Conda 環境套件列表
-└── README.md             # 本說明文件
-```
 
 ## 致謝
 
