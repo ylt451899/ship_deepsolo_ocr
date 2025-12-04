@@ -76,7 +76,6 @@ pip install -r requirements.txt
     *   執行 `ship_detection.py` 會自動下載檔案 `yolov11n.pt`
     *   **下載檔案**: `yolov11n.pt`
     *   **放置路徑**: 請在專案根目錄下建立 `weights` 資料夾，並將模型放入。最終路徑為 `./weights/yolov11n.pt`。
-    *   *(注意: `ship_detection.py` 中模型路徑為 `'../weights/yolo11n.pt'`，請自行確認模型檔名與路徑是否一致，或修改程式碼中的路徑。此處以 `yolov11n.pt` 為例)*
 
 *   **DeepSolo (OCR 模型)**
     *   **下載檔案**: `res50_pretrain_synch-art-lsvt-rects.pth`
