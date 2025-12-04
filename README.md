@@ -121,7 +121,7 @@ python ship_ocr_detection.py
 
 ## 致謝
 
-- 本專案的 OCR 功能基於 [DeepSolo](https://github.com/alibaba-damo-academy/DeepSolo)。
+- 本專案的 OCR 功能基於 [DeepSolo](https://github.com/ViTAE-Transformer/DeepSolo)。
 - 船隻偵測功能使用了 [YOLO (You Only Look Once)](https://github.com/ultralytics/ultralytics) 模型。
 
 感謝這些優秀的開源專案。
